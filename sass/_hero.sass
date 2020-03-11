@@ -1,0 +1,71 @@
+@import 'fonts'
+@import 'colors'
+
+
+.genre
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 16px
+    display: block
+
+
+.hero
+    display: flex
+    &-title
+        font-weight: 500
+        font-size: 76px
+        line-height: 89px
+        font-family: 'MasonChronicles', serif
+        margin-bottom: 10px
+    &-description
+        font-size: 14px
+        line-height: 150%
+        max-width: 458px
+        margin-bottom: 40px
+    
+    
+.rating
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    &-number
+        font-size: 12px
+        line-height: 14px
+        margin-left: 9px
+
+
+
+.play
+    width: 100px
+    height: 100px
+    background: #9D2929
+    border-radius: 50%
+    border: none
+    position: relative
+    margin: auto
+    justify-content: center
+    display: flex
+    align-items: center
+    &::before
+        content: ''
+        width: 132px
+        height: 132px
+        opacity: 0.5
+        background: #9D2929
+        position: absolute
+        border-radius: 50%
+        left: -16px
+        top: -16px
+    &-button
+        background: #9D2929
+        border: none
+        border-radius: 8px
+        padding: 22px 72px
+        color: $white-color
+        margin-bottom: 80px
+        display: inline-block
+    &-image
+        position: relative
+        transform: translateX(5px)
+
+

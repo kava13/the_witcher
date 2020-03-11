@@ -1,0 +1,56 @@
+@import 'fonts'
+@import 'colors'
+
+    
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 60px
+    margin-bottom: 90px
+    &-active
+        display: flex!important
+
+.menu
+    &-list
+        margin-right: auto
+        margin-left: 67px
+    &-link
+        text-decoration: none
+        font-size: 14px
+        line-height: 16px
+        color: $white-color
+        margin-right: 24px
+    &-button
+        display: none
+        &__active
+            height: 0
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                width: 30px
+                height: 2px
+                background-color: #fff
+                margin-top: 0px
+                border: none
+                transform: rotate(45deg) 
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                width: 30px
+                height: 2px
+                background-color: #fff
+                margin-top: 0px
+                border: none
+                transform: rotate(-45deg)
+            
+                
+
+.social
+    &-link
+        margin-left: 20px
+        text-decoration: none
+
+
